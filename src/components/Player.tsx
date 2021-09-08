@@ -84,7 +84,7 @@ export const PlayerComponent: React.FC<PlayerComponentProps> = (props) => {
         color="purple"
         expedition={purple}
         onChange={(newPurple) => {
-          setRed(newPurple)
+          setPurple(newPurple)
         }}
       />
       <div>
