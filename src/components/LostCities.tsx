@@ -28,6 +28,7 @@ function newPlayer(): Player {
     white: newExpedition(),
     green: newExpedition(),
     red: newExpedition(),
+    purple: newExpedition(),
   }
 }
 
