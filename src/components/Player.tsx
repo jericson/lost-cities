@@ -16,7 +16,7 @@ export const PlayerComponent: React.FC<PlayerComponentProps> = (props) => {
   const [white, setWhite] = useState(props.player.white);
   const [green, setGreen] = useState(props.player.green);
   const [red, setRed] = useState(props.player.red);
-  const [red, setPurple] = useState(props.player.purple);
+  const [purple, setPurple] = useState(props.player.purple);
 
   const total = expeditionCalculator(yellow).finalPoints +
     expeditionCalculator(blue).finalPoints +
