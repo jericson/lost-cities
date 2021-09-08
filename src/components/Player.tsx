@@ -16,6 +16,7 @@ export const PlayerComponent: React.FC<PlayerComponentProps> = (props) => {
   const [white, setWhite] = useState(props.player.white);
   const [green, setGreen] = useState(props.player.green);
   const [red, setRed] = useState(props.player.red);
+  const [red, setPurple] = useState(props.player.purple);
 
   const total = expeditionCalculator(yellow).finalPoints +
     expeditionCalculator(blue).finalPoints +
@@ -33,7 +34,8 @@ export const PlayerComponent: React.FC<PlayerComponentProps> = (props) => {
     setWhite(props.player.white);
     setGreen(props.player.green);
     setRed(props.player.red);
-  }, [props, setYellow, setBlue, setWhite, setGreen, setRed]);
+    setPurple(props.player.purple);
+  }, [props, setYellow, setBlue, setWhite, setGreen, setRed, setPurple]);
 
   return (
     <div style={{marginBottom: '2rem'}}>
@@ -77,6 +79,13 @@ export const PlayerComponent: React.FC<PlayerComponentProps> = (props) => {
           setRed(newRed)
         }}
       />
+      <ExpeditionComponent
+        color="purple"
+        expedition={purple}
+        onChange={(newPurple) => {
+          setRed(newPurple)
+        }}
+      />
       <div>
         Total: {total}
       </div>
@@ -107,6 +116,10 @@ export const PlayerExpeditionPointsComponent: React.FC<{player: Player, name: st
     {
       key: 'red',
       ...player.red.points,
+    },
+    {
+       key: 'purple',
+      ...player.purple.points,
     },
     {
       key: 'Final Points',
