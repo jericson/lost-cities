@@ -10,7 +10,8 @@ export type Player = {
   blue: Expedition,
   white: Expedition,
   green: Expedition,
-  red: Expedition
+  red: Expedition,
+  purple: Expedition
 }
 
 export type Expedition = {
