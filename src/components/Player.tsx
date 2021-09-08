@@ -22,11 +22,12 @@ export const PlayerComponent: React.FC<PlayerComponentProps> = (props) => {
     expeditionCalculator(blue).finalPoints +
     expeditionCalculator(white).finalPoints +
     expeditionCalculator(green).finalPoints +
-    expeditionCalculator(red).finalPoints;
+    expeditionCalculator(red).finalPoints +
+    expeditionCalculator(purple).finalPoints;
 
   useEffect(() => {
-    props.onChange({name, points: total, yellow, blue, white, green, red});
-  }, [name, yellow, blue, white, green, red]); // eslint-disable-line react-hooks/exhaustive-deps
+    props.onChange({name, points: total, yellow, blue, white, green, red, purple});
+  }, [name, yellow, blue, white, green, red, purple]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     setYellow(props.player.yellow);
