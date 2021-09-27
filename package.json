@@ -2,7 +2,7 @@
   "name": "lost-cities",
   "version": "0.1.0",
   "license": "MIT",
-  "homepage": "https://aizatto.github.io/lost-cities",
+  "homepage": "https://lost-cities.netlify.app",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
