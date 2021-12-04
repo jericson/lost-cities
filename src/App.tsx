@@ -10,7 +10,8 @@ function App() {
       </div>
       <h1>Resources</h1>
       <ul>
-        <li><a href="https://www.github.com/aizatto/lost-cities/">GitHub Source Code</a></li>
+        <li><a href="https://github.com/jericson/lost-cities">Source code for this site on GitHub.</a></li>
+        <li><a href="https://www.github.com/aizatto/lost-cities/">A big thanks to Aizat Faiz, who wrote the original version of this page.</a></li>
         <li>
           <a href="https://www.thamesandkosmos.com/index.php/product/category/games/lost-cities-card-game">Official Site</a>
           <ul>
